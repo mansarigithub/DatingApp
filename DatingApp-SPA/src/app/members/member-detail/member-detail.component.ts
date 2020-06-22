@@ -13,7 +13,6 @@ import { ActivatedRoute } from '@angular/router';
 export class MemberDetailComponent implements OnInit {
   user: User;
 
-  
   constructor(
     private userService: UserService,
     private alertify: AlertifyService,
@@ -25,6 +24,8 @@ export class MemberDetailComponent implements OnInit {
       this.user = data['user'];
     });
   }
+
+
   // loadUser(){
   //   this.userService.getUser(+this.route.snapshot.params['id']).subscribe((user: User) => {
   //     this.user = user;
